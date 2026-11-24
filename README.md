@@ -2,6 +2,8 @@
 
 [🇺🇸 English](README.md) | [🇨🇳 中文说明](README.zh-CN.md)
 
+**This checkpoint uses mixed-bit quantization, predominantly 2-bit and 3-bit.** Those two widths account for 90.18% of the routed experts' matrix weights. The complete text weights average **2.55 BPW (bits per weight)** on disk, including scales, codebooks and retained BF16/FP32 tensors. [Bit-width breakdown](https://huggingface.co/sunny114514/Inkling-2-Mini-Compact-CUDA/blob/d6443b1cf4f3dae2afcb48bd40c53d9f3fe4bc85/evaluation/quantization.json)
+
 [Download the weights](https://huggingface.co/sunny114514/Inkling-2-Mini-Compact-CUDA) · [CUDA runner and source](https://github.com/sunnyspot114514/inkling-mini-cuda) · [Windows DLL](https://github.com/sunnyspot114514/inkling-mini-cuda/releases/tag/v0.1.0)
 
 Run Inkling-2-Mini locally on a **12 GB GeForce RTX 3060**. The 8.35 GB expert mix keeps all 24 physical layers and all 128 experts per layer. Its CUDA runner reads the packed weights on the GPU and uses the model's chat template for arithmetic, code generation and multi-turn conversation.

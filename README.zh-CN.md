@@ -2,6 +2,8 @@
 
 [🇺🇸 English](README.md) | [🇨🇳 中文说明](README.zh-CN.md)
 
+**本版采用以 2、3 bit 为主的混合量化。** 路由专家的矩阵权重中，90.18% 使用这两种位宽。计入缩放因子、码本和保留的 BF16/FP32 张量后，**整套文本权重落盘后平均为 2.55 BPW**（每个参数的平均存储位数）。[位宽核算明细](https://huggingface.co/sunny114514/Inkling-2-Mini-Compact-CUDA/blob/d6443b1cf4f3dae2afcb48bd40c53d9f3fe4bc85/evaluation/quantization.json)
+
 [下载模型权重](https://huggingface.co/sunny114514/Inkling-2-Mini-Compact-CUDA) · [CUDA 运行器与源码](https://github.com/sunnyspot114514/inkling-mini-cuda) · [Windows DLL](https://github.com/sunnyspot114514/inkling-mini-cuda/releases/tag/v0.1.0)
 
 在 **RTX 3060 12 GB** 上本地运行 Inkling-2-Mini。8.35 GB 专家混合版保留了 24 个物理层和每层全部 128 个专家。CUDA 运行器在显卡上直接读取压缩权重，使用模型自带的对话模板，支持数学问答、代码生成和多轮对话。
