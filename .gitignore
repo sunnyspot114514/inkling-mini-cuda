@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.dll
+*.lib
+*.exp
+*.so
+.venv/
+parents/
+expert-mix-8350/
+rebuilt-835/
+rebuilt-hashes.json
+build/

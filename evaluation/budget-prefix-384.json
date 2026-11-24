@@ -1,0 +1,49 @@
+{
+  "method": "Prefix-only regrading of stored token IDs with the original local grader",
+  "prefix_cap": 384,
+  "reference_output_budget": 1024,
+  "baseline": {
+    "gsm8k": {
+      "items": 200,
+      "full_correct": 191,
+      "prefix_correct": 148,
+      "outputs_longer_than_cap": 53,
+      "longer_outputs_without_final_text_at_cap": 31,
+      "prefix_only_correct": 0,
+      "full_only_correct": 43,
+      "input_protocol_sha256": "8153845299f7166587258124567a43dc54a0f6d1a3412cbe7f99ab4a7033d368"
+    },
+    "humaneval": {
+      "items": 164,
+      "full_correct": 130,
+      "prefix_correct": 30,
+      "outputs_longer_than_cap": 134,
+      "longer_outputs_without_final_text_at_cap": 94,
+      "prefix_only_correct": 0,
+      "full_only_correct": 100,
+      "input_protocol_sha256": "190ae155df09e2e57dd353296f8c5017fcb76227e3fc15d050083776aa48e58b"
+    }
+  },
+  "candidate": {
+    "gsm8k": {
+      "items": 200,
+      "full_correct": 191,
+      "prefix_correct": 149,
+      "outputs_longer_than_cap": 51,
+      "longer_outputs_without_final_text_at_cap": 30,
+      "prefix_only_correct": 0,
+      "full_only_correct": 42,
+      "input_protocol_sha256": "df50d99030e88653ef69891977f0ac601d14d4cb9adcbb9eb110eef0c1d9ae1c"
+    },
+    "humaneval": {
+      "items": 164,
+      "full_correct": 132,
+      "prefix_correct": 29,
+      "outputs_longer_than_cap": 135,
+      "longer_outputs_without_final_text_at_cap": 97,
+      "prefix_only_correct": 0,
+      "full_only_correct": 103,
+      "input_protocol_sha256": "cfffba5b3fcdd6b4f582138386c2044f81e57e6c86afa3e69871b50f7f16d7b0"
+    }
+  }
+}

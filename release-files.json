@@ -1,0 +1,10 @@
+{
+  "version": "v0.1.0",
+  "model_repo": "sunny114514/Inkling-2-Mini-Compact-CUDA",
+  "model_directory": "expert-mix-8350",
+  "runtime_files": 61,
+  "runtime_bytes": 8349693242,
+  "checksummed_files": 76,
+  "weights_manifest_sha256": "463afffa9a8bb776c2e222c20d76e97fcae237c343733d633e72c49d06070afe",
+  "windows_sm86_dll_sha256": "5381b4f87f047b01644626031c033b219e821298e3ab72eaf6a02e16d024fbe2"
+}

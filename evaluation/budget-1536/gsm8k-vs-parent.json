@@ -1,0 +1,14 @@
+{
+  "task": "gsm8k",
+  "n": 200,
+  "max_new_tokens": 1536,
+  "expert": 192,
+  "baseline": 195,
+  "expert_only": 0,
+  "baseline_only": 3,
+  "mcnemar_exact_two_sided_p": 0.25,
+  "paired_95ci_pp": [
+    -3.5,
+    0.0
+  ]
+}

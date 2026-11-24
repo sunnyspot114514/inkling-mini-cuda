@@ -1,0 +1,9 @@
+*.py text eol=lf
+*.cu text eol=lf
+*.md text eol=lf
+*.json -text
+*.jsonl -text
+*.npz binary
+LICENSE -text
+licenses/*.txt -text
+requirements.txt text eol=lf

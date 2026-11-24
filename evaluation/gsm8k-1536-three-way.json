@@ -1,0 +1,88 @@
+{
+  "task": "gsm8k",
+  "split": "first 200 test problems",
+  "n": 200,
+  "data_sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+  "template_sha256": "53a9035f3255945704b5857657cfb00c1165090c0641c4f782a0cbf268cc16dc",
+  "max_new_tokens": 1536,
+  "batch_size": 2,
+  "kv_dtype": "float16",
+  "greedy": true,
+  "reasoning_effort": "none",
+  "models": {
+    "baseline": {
+      "items": 200,
+      "source_protocol_sha256": "8153845299f7166587258124567a43dc54a0f6d1a3412cbe7f99ab4a7033d368",
+      "extended_protocol_sha256": "0c99df4d2bf7bb723fa455b0035100158c31d2f7e376f4f2bee5cb63f60ce636",
+      "original_cap": 1024,
+      "replayed_batches": 9,
+      "replayed_sequences": 18,
+      "original_correct": 191,
+      "extended_correct": 195,
+      "original_capped": 9,
+      "extended_capped": 3
+    },
+    "two-layer": {
+      "items": 200,
+      "source_protocol_sha256": "7c0ec90899e2857cdd84f620370d3ca36c8e86569b68e011e0bc18353d827973",
+      "extended_protocol_sha256": "37f3ea0fd83e47cc703075b87e0d3836d5c25cae703f579bf6a08b10267e9ec7",
+      "original_cap": 1024,
+      "replayed_batches": 9,
+      "replayed_sequences": 18,
+      "original_correct": 189,
+      "extended_correct": 194,
+      "original_capped": 9,
+      "extended_capped": 4
+    },
+    "expert": {
+      "items": 200,
+      "source_protocol_sha256": "df50d99030e88653ef69891977f0ac601d14d4cb9adcbb9eb110eef0c1d9ae1c",
+      "extended_protocol_sha256": "25e37a72592d75dfc3ca1060b1de9a510aad5ac893932b47cf688dfe8f9d48cb",
+      "original_cap": 1024,
+      "replayed_batches": 6,
+      "replayed_sequences": 12,
+      "original_correct": 191,
+      "extended_correct": 192,
+      "original_capped": 6,
+      "extended_capped": 5
+    }
+  },
+  "paired": [
+    {
+      "first": "two-layer",
+      "second": "baseline",
+      "first_only": 0,
+      "second_only": 1,
+      "difference_pp": -0.5,
+      "exact_mcnemar_p": 1.0,
+      "paired_95ci_pp": [
+        -1.5,
+        0.0
+      ]
+    },
+    {
+      "first": "expert",
+      "second": "baseline",
+      "first_only": 0,
+      "second_only": 3,
+      "difference_pp": -1.5,
+      "exact_mcnemar_p": 0.25,
+      "paired_95ci_pp": [
+        -3.5,
+        0.0
+      ]
+    },
+    {
+      "first": "two-layer",
+      "second": "expert",
+      "first_only": 2,
+      "second_only": 0,
+      "difference_pp": 1.0,
+      "exact_mcnemar_p": 0.5,
+      "paired_95ci_pp": [
+        0.0,
+        2.5
+      ]
+    }
+  ]
+}

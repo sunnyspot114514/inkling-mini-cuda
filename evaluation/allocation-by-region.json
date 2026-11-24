@@ -1,0 +1,44 @@
+{
+  "normalization": "Selected squared gate mass divided by total squared gate mass within the named physical-layer region and training domain. Core passes are accumulated before normalization.",
+  "training_tokens": {
+    "math": 1241,
+    "code": 999
+  },
+  "regions": {
+    "0-5": {
+      "selected_pairs": 27,
+      "selected_pair_fraction": 0.03515625,
+      "math_squared_gate_mass_fraction": 0.0007082363835792032,
+      "code_squared_gate_mass_fraction": 0.0012411828350764225,
+      "total_expert_pairs": 768
+    },
+    "6-17": {
+      "selected_pairs": 108,
+      "selected_pair_fraction": 0.0703125,
+      "math_squared_gate_mass_fraction": 0.0027006108017653407,
+      "code_squared_gate_mass_fraction": 0.0013047692119247823,
+      "total_expert_pairs": 1536
+    },
+    "18-19": {
+      "selected_pairs": 119,
+      "selected_pair_fraction": 0.46484375,
+      "math_squared_gate_mass_fraction": 0.05600986278417288,
+      "code_squared_gate_mass_fraction": 0.024598639319490016,
+      "total_expert_pairs": 256
+    },
+    "20-23": {
+      "selected_pairs": 196,
+      "selected_pair_fraction": 0.3828125,
+      "math_squared_gate_mass_fraction": 0.061791856627143,
+      "code_squared_gate_mass_fraction": 0.025977360992286203,
+      "total_expert_pairs": 512
+    },
+    "0-23": {
+      "selected_pairs": 450,
+      "selected_pair_fraction": 0.146484375,
+      "math_squared_gate_mass_fraction": 0.010177469146440124,
+      "code_squared_gate_mass_fraction": 0.00502645276344331,
+      "total_expert_pairs": 3072
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "output_limit": 1536,
+  "tasks": {
+    "gsm8k": {
+      "items": 200,
+      "source_protocol_sha256": "df50d99030e88653ef69891977f0ac601d14d4cb9adcbb9eb110eef0c1d9ae1c",
+      "extended_protocol_sha256": "25e37a72592d75dfc3ca1060b1de9a510aad5ac893932b47cf688dfe8f9d48cb",
+      "original_cap": 1024,
+      "replayed_batches": 6,
+      "replayed_sequences": 12,
+      "original_correct": 191,
+      "extended_correct": 192,
+      "original_capped": 6,
+      "extended_capped": 5
+    },
+    "humaneval": {
+      "items": 164,
+      "source_protocol_sha256": "cfffba5b3fcdd6b4f582138386c2044f81e57e6c86afa3e69871b50f7f16d7b0",
+      "extended_protocol_sha256": "ca3b7f949a68f5f99583649c7cccdd9fd756004156bcd629e99d70cf20618558",
+      "original_cap": 1024,
+      "replayed_batches": 29,
+      "replayed_sequences": 58,
+      "original_correct": 132,
+      "extended_correct": 147,
+      "original_capped": 32,
+      "extended_capped": 17
+    }
+  },
+  "complete": true,
+  "all_replayed_original_prefixes_verified": true
+}

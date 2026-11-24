@@ -1,0 +1,107 @@
+{
+  "output_limit": 1536,
+  "models": {
+    "baseline": {
+      "output_limit": 1536,
+      "tasks": {
+        "gsm8k": {
+          "items": 200,
+          "source_protocol_sha256": "8153845299f7166587258124567a43dc54a0f6d1a3412cbe7f99ab4a7033d368",
+          "extended_protocol_sha256": "0c99df4d2bf7bb723fa455b0035100158c31d2f7e376f4f2bee5cb63f60ce636",
+          "original_cap": 1024,
+          "replayed_batches": 9,
+          "replayed_sequences": 18,
+          "original_correct": 191,
+          "extended_correct": 195,
+          "original_capped": 9,
+          "extended_capped": 3
+        },
+        "humaneval": {
+          "items": 164,
+          "source_protocol_sha256": "190ae155df09e2e57dd353296f8c5017fcb76227e3fc15d050083776aa48e58b",
+          "extended_protocol_sha256": "8d5086ae5d9ee31bfcce61bdb5c8c853ab8ab2a4e979d51931e390aa0c6eb106",
+          "original_cap": 1024,
+          "replayed_batches": 32,
+          "replayed_sequences": 64,
+          "original_correct": 130,
+          "extended_correct": 145,
+          "original_capped": 34,
+          "extended_capped": 19
+        }
+      },
+      "complete": true,
+      "all_replayed_original_prefixes_verified": true
+    },
+    "expert": {
+      "output_limit": 1536,
+      "tasks": {
+        "gsm8k": {
+          "items": 200,
+          "source_protocol_sha256": "df50d99030e88653ef69891977f0ac601d14d4cb9adcbb9eb110eef0c1d9ae1c",
+          "extended_protocol_sha256": "25e37a72592d75dfc3ca1060b1de9a510aad5ac893932b47cf688dfe8f9d48cb",
+          "original_cap": 1024,
+          "replayed_batches": 6,
+          "replayed_sequences": 12,
+          "original_correct": 191,
+          "extended_correct": 192,
+          "original_capped": 6,
+          "extended_capped": 5
+        },
+        "humaneval": {
+          "items": 164,
+          "source_protocol_sha256": "cfffba5b3fcdd6b4f582138386c2044f81e57e6c86afa3e69871b50f7f16d7b0",
+          "extended_protocol_sha256": "ca3b7f949a68f5f99583649c7cccdd9fd756004156bcd629e99d70cf20618558",
+          "original_cap": 1024,
+          "replayed_batches": 29,
+          "replayed_sequences": 58,
+          "original_correct": 132,
+          "extended_correct": 147,
+          "original_capped": 32,
+          "extended_capped": 17
+        }
+      },
+      "complete": true,
+      "all_replayed_original_prefixes_verified": true
+    }
+  },
+  "paired_comparisons": [
+    {
+      "first": "expert",
+      "second": "baseline",
+      "task": "gsm8k",
+      "first_only": 0,
+      "second_only": 3,
+      "discordant_with_either_capped": 3,
+      "neither_capped": {
+        "items": 194,
+        "first_correct": 192,
+        "second_correct": 192
+      },
+      "difference_pp": -1.5,
+      "paired_95ci_pp": [
+        -3.5,
+        0.0
+      ],
+      "exact_mcnemar_p": 0.25
+    },
+    {
+      "first": "expert",
+      "second": "baseline",
+      "task": "humaneval",
+      "first_only": 6,
+      "second_only": 4,
+      "discordant_with_either_capped": 10,
+      "neither_capped": {
+        "items": 141,
+        "first_correct": 141,
+        "second_correct": 141
+      },
+      "difference_pp": 1.2195121951219512,
+      "paired_95ci_pp": [
+        -2.4390243902439024,
+        4.878048780487805
+      ],
+      "exact_mcnemar_p": 0.75390625
+    }
+  ]
+}
